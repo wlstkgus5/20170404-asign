@@ -1,0 +1,36 @@
+
+public class Student {
+
+	private String GA ;
+	private int num ;
+	
+	public String getGA(){
+		return GA;
+	}
+	public void setGA(String GA){
+		this.GA = GA;
+	}
+	
+	public int getnum(){
+		return num;
+	}
+	public void setnum(int num){
+		this.num = num;
+	}
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//1번문제
+		
+		Student Student1 = new Student();  //객체를 생성
+			
+		
+		
+		Student1.setGA("컴퓨터 공학과");
+		Student1.setnum(20142783);
+		
+		System.out.println(Student1.getGA());
+		System.out.println(Student1.getnum());
+	}
+}
