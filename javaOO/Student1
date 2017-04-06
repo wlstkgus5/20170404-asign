@@ -1,0 +1,19 @@
+public class Student {
+
+	 String GA ;
+	 int num ;
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//1번문제
+		
+		Student Student1 = new Student();  //객체를 생성
+			
+		Student1.GA ="컴퓨터 공학과";
+		Student1.num =20142783;
+		
+		System.out.println("학과는:" + Student1.GA);
+		System.out.println("학번은:" + Student1.num);
+		
+	}
+}
