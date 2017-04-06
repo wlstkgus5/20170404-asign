@@ -1,0 +1,30 @@
+public class Circle1 {
+
+	public double radius;
+	public static double  PI =3.141592;
+	
+	public Circle1(double radius){
+		this.radius = radius;
+	}
+	public double getArea(){
+		return radius * radius * PI ;
+	}
+	
+ }
+class Cylinder{
+	  Circle1 Circle1 ;
+	  double height ;
+	 public Cylinder(double radius, double h){
+		 this.Circle1 = new Circle1(radius);
+		 this.height = h;
+	 }	   
+	  double getVolume(){
+		 double Volume = Circle1.getArea()*height;
+		 return Volume;  
+	 }
+	 public void main(String[] args) {
+		 Cylinder c = new Cylinder(2.8,5.6);
+		 System.out.println("원통의 부피는?" + c.getVolume());	 		 
+	 }
+		 		 
+}
